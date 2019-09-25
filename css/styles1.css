@@ -1,0 +1,40 @@
+body {
+  font-family: Verdana, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+#menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #fff;
+  background: skyblue;
+  box-sizing: border-box;
+  width: 180px;
+  min-height: 100%;
+}
+
+#main {
+  z-index: 1;
+  background: #eee;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #333;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  /* overflow: auto; */
+  transition: 0.4s;
+}
+
+#main.menu-open {
+  left: -180px;
+}
+
+#show {
+  float: right;
+  cursor: pointer;
+}
